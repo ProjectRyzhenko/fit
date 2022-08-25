@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+
+/* SCROLLBAR */
+*::-webkit-scrollbar { display: none  }
+
+/* SECTIONS */
+.section { @apply p-10 }
+
+/* GALLERY */
+@screen lg {
+  .gallery-img:nth-child(2),
+  .gallery-img:nth-child(4),
+  .gallery-img:nth-child(5),
+  .gallery-img:nth-child(6)  { @apply row-span-3 }
+}
+
+@tailwind utilities;
